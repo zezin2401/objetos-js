@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos em Objetos</title>
+</head>
+<body>
+
+    <script>
+
+        const pessoa = {
+            nome: 'Claudio',
+            idade: '99',
+            email: 'pessoasbrg@example.com',
+
+            cumprimentar() {
+                alert('Olá, meu nome é ');
+                this.nome
+            }
+        };
+        pessoa.cumprimentar();
+
+    </script>
+
+</body>
+</html>

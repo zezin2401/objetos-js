@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geral</title>
+</head>
+<body>
+
+    <script>
+        const Celular = {
+            marca: 'Xiaomi',
+            modelo: 'POCO X4 PRO',
+            cor: 'Preto',
+            formato: 'Retangular',
+            ano: 2022,
+
+            ligar() {
+                alert("LIGOU");
+            },
+
+            notificacao() {
+                alert("Hum Hum");
+            },
+
+            desligar() {
+                alert("DESLIGOU");
+            }
+        };
+
+        function imprimirChavesEValores(obj) {
+            for (const chave in obj) {
+                console.log(chave + ": " + obj[chave]);
+            }
+        }
+
+        imprimirChavesEValores(Celular);
+    </script>
+
+</body>
+</html>

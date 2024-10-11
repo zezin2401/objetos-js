@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Objetos</title>
+</head>
+<body>
+    
+    <script>
+
+        function definirPropriedade(objeto, chave, valor) {
+            objeto[chave] = valor;
+        }
+
+        const livro = {
+            titulo: "O Senhor dos Anéis",
+            autor: "Alakazam",
+            anoPublicacao: 1954
+        };
+
+        definirPropriedade(livro, "autor", "Tolkien");
+        console.log(livro.autor); 
+
+
+    </script>
+
+
+</body>
+</html>

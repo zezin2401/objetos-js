@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterando Propriedades</title>
+</head>
+<body>
+
+    <script>
+        const Pessoa = {
+            nome: "Claudio",
+            idade: "99",
+            email: "pessoasbrg@gmail.com",
+        };
+
+        function imprimirChavesValores(objeto) {
+            for (const chave in objeto) {
+                console.log(`${chave}: ${objeto[chave]}`);
+            }
+        }
+
+        imprimirChavesValores(Pessoa);
+    </script>
+
+</body>
+</html>
